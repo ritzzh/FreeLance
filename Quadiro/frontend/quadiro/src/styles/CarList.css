@@ -1,0 +1,30 @@
+.cars-container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box; 
+}
+
+.car-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cars-container h2 {
+  margin-bottom: 20px;
+}
+
+.car-card {
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  width: calc(50% - 20px); 
+  box-sizing: border-box; 
+}
+
+.car-card p {
+  margin: 5px 0;
+}

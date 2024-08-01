@@ -1,0 +1,23 @@
+.car-card {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .car-card p {
+    margin: 5px 0;
+  }
+  
+  .car-card input {
+    width: calc(100% - 20px);
+    padding: 5px;
+    margin: 5px 0;
+  }
+  
+  .car-card button {
+    padding: 5px 10px;
+    margin: 5px 0;
+  }
+  
