@@ -36,7 +36,6 @@ function Signup() {
         throw new Error('Signup failed');
       }
 
-      const result = await res.json();
       setError('');
       setSuccess('Signup successful! You can now log in.');
       setEmail('');

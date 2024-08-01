@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/Dashboard.css';
 
-function Dashboard() {
+function DashBoard() {
   const [stats, setStats] = useState({});
   const [error, setError] = useState(null);
 
@@ -53,4 +53,4 @@ function Dashboard() {
   );
 }
 
-export default Dashboard;
+export default DashBoard;
