@@ -50,6 +50,7 @@ function Signup() {
 
   return (
     <div className="signup-container">
+    <h3>Assignmnet for Quadiro Technologies</h3>
       <h1>Signup</h1>
       <form onSubmit={handleSubmit}>
         <div>

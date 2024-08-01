@@ -43,7 +43,7 @@ function AddDetail() {
 
   return (
     <div className="form-container">
-      <h1>Add Car Details</h1>
+      <h3>Add Car Details</h3>
       <form onSubmit={handleSubmit}>
         <div>
           <label>

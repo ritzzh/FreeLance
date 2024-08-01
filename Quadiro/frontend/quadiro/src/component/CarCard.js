@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import '../styles/CarCard.css';
+import React, { useState } from "react";
+import "../styles/CarCard.css";
 
 function CarCard({ car, onDelete, onUpdate }) {
   const [isEditing, setIsEditing] = useState(false);
@@ -17,37 +17,39 @@ function CarCard({ car, onDelete, onUpdate }) {
 
   return (
     <div className="car-card">
-      {isEditing ? (
-        <>
-          <input
-            type="text"
-            name="carName"
-            value={updatedCar.carName}
-            onChange={handleInputChange}
-          />
-          <input
-            type="number"
-            name="manufacturingYear"
-            value={updatedCar.manufacturingYear}
-            onChange={handleInputChange}
-          />
-          <input
-            type="number"
-            name="price"
-            value={updatedCar.price}
-            onChange={handleInputChange}
-          />
-          <button onClick={handleUpdate}>Save</button>
-        </>
-      ) : (
-        <>
-          <p>Name: {car.carName}</p>
-          <p>Year: {car.manufacturingYear}</p>
-          <p>Price: ${car.price}</p>
-          <button onClick={() => setIsEditing(true)}>Edit</button>
-        </>
-      )}
-      <button onClick={() => onDelete(car._id)}>Delete</button>
+      <div className="car-inner">
+        {isEditing ? (
+          <>
+            <input
+              type="text"
+              name="carName"
+              value={updatedCar.carName}
+              onChange={handleInputChange}
+            />
+            <input
+              type="number"
+              name="manufacturingYear"
+              value={updatedCar.manufacturingYear}
+              onChange={handleInputChange}
+            />
+            <input
+              type="number"
+              name="price"
+              value={updatedCar.price}
+              onChange={handleInputChange}
+            />
+            <button onClick={handleUpdate}>Save</button>
+          </>
+        ) : (
+          <>
+            <p>Name: {car.carName}</p>
+            <p>Year: {car.manufacturingYear}</p>
+            <p>Price: ${car.price}</p>
+            <button onClick={() => setIsEditing(true)}>Edit</button>
+          </>
+        )}
+        <button onClick={() => onDelete(car._id)}>Delete</button>
+      </div>
     </div>
   );
 }

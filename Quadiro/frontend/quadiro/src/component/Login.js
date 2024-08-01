@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../styles/Login.css'; // Adjust path as needed
+import '../styles/Login.css';
 
 function Login() {
   const [email, setEmail] = useState('');
@@ -12,7 +12,6 @@ function Login() {
     e.preventDefault();
 
     const user = { email, password };
-
     try {
       const res = await fetch('http://localhost:4000/api/login', {
         method: 'POST',
@@ -36,6 +35,7 @@ function Login() {
 
   return (
     <div className="login-container">
+      <h3>Assignmnet for Quadiro Technologies</h3>
       <h1>Login</h1>
       <form onSubmit={handleSubmit}>
         <div>

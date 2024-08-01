@@ -1,13 +1,15 @@
-/* Login.css */
 
 .login-container {
   max-width: 400px;
-  margin: auto;
+  margin: 10% auto;
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
   background-color: #f9f9f9;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.login-container h3 {
+ text-align: center;
 }
 
 .login-container h1 {

@@ -54,19 +54,19 @@ exports.getCarStats = async (req, res) => {
     const carsLast20Years = await Car.countDocuments({
       manufacturingYear: { $gte: new Date().getFullYear() - 20 },
     });
-    const cars10k20k = await Car.countDocuments({
-      price: { $gte: 10000, $lt: 20000 },
+    const cars50k = await Car.countDocuments({
+      price: { $gte: 0, $lt: 50000 },
     });
-    const cars20k30k = await Car.countDocuments({
-      price: { $gte: 20000, $lt: 30000 },
+    const carsu50k = await Car.countDocuments({
+      price: { $gte: 50000 },
     });
 
     res.json({
       totalCars,
       carsLast10Years,
       carsLast20Years,
-      cars10k20k,
-      cars20k30k,
+      cars50k,
+      carsu50k,
     });
   } catch (error) {
     res.status(500).json({ error: 'Server error' });

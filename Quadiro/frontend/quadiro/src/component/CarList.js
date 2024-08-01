@@ -61,7 +61,7 @@ function CarList() {
 
   return (
     <div className="cars-container">
-      <h2>Added Cars</h2>
+      <h3>Added Cars</h3>
       <div className="car-list">
         {error && <p className="error">Error: {error}</p>}
         {cars.length === 0 && !error ? (

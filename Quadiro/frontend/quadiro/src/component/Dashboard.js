@@ -24,6 +24,7 @@ function Dashboard() {
 
   return (
     <div className="dashboard">
+    <h3>Assignmnet for Quadiro Technologies</h3>
       <h1>Dashboard</h1>
       {error && <p className="error">Error: {error}</p>}
       <div className="stats">
@@ -40,12 +41,12 @@ function Dashboard() {
           <p>{stats.carsLast20Years}</p>
         </div>
         <div className="stat">
-          <h3>Cars in Price Range $10k-$20k</h3>
-          <p>{stats.cars10k20k}</p>
+          <h3>Cars in Price Range below $50k</h3>
+          <p>{stats.cars50k}</p>
         </div>
         <div className="stat">
-          <h3>Cars in Price Range $20k-$30k</h3>
-          <p>{stats.cars20k30k}</p>
+          <h3>Cars in Price Range above $50k</h3>
+          <p>{stats.carsu50k}</p>
         </div>
       </div>
     </div>
