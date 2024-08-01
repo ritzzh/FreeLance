@@ -17,7 +17,7 @@ function AddDetail() {
     };
 
     try {
-      const res = await fetch("http://localhost:4000/api/addcar", {
+      const res = await fetch("https://internshala-dzq7.onrender.com/api/addcar", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

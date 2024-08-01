@@ -8,7 +8,7 @@ function Dashboard() {
   useEffect(() => {
     const fetchStats = async () => {
       try {
-        const res = await fetch('http://localhost:4000/api/stats');
+        const res = await fetch('https://internshala-dzq7.onrender.com/api/stats');
         if (!res.ok) {
           throw new Error('Network response was not ok');
         }
