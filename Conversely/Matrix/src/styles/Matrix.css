@@ -1,0 +1,52 @@
+.outer
+{
+    display: flex;
+    background-color: bisque;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.matrix{  
+    gap:50px;
+    display: grid;
+    grid-template-columns: 12vw 12vw 12vw;
+    grid-template-rows: 12vw 12vw 12vw;
+}
+.black{
+
+    background-color: black;
+}
+.green{
+
+    background-color: green;
+}
+.orange{
+
+    background-color: orange;
+}
+
+.reset button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px;
+    margin: 15px 2px;
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.reset button:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+.reset button:active {
+    transform: scale(0.9);
+}
+
