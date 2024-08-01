@@ -19,7 +19,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors(
     {
-        origin:'http://localhost:3000',
+        origin:['http://localhost:3000','https://quadiro-5e6u.onrender.com'],
         methods: ['GET','POST','PUT','UPDATE','DELETE']
     }
 ))
