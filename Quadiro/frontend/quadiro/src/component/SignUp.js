@@ -24,7 +24,7 @@ function Signup() {
     };
 
     try {
-      const res = await fetch('https://quadiro-five.vercel.app/api/signup', {
+      const res = await fetch('https://backend-xi-green.vercel.app/api/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

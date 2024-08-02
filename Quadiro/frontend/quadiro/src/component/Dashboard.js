@@ -8,7 +8,7 @@ function Dashboard() {
   useEffect(() => {
     const fetchStats = async () => {
       try {
-        const res = await fetch('https://quadiro-five.vercel.app/api/stats');
+        const res = await fetch('https://backend-xi-green.vercel.app/api/stats');
         if (!res.ok) {
           throw new Error('Network response was not ok');
         }

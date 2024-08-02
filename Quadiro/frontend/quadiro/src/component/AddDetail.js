@@ -17,7 +17,7 @@ function AddDetail() {
     };
 
     try {
-      const res = await fetch("https://quadiro-five.vercel.app/api/addcar", {
+      const res = await fetch("https://backend-xi-green.vercel.app/api/addcar", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
