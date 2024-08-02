@@ -13,7 +13,7 @@ function Login() {
 
     const user = { email, password };
     try {
-      const res = await fetch('https://internshala-weld.vercel.app/api/login', {
+      const res = await fetch('https://quadiro-five.vercel.app/api/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

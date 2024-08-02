@@ -8,7 +8,7 @@ function CarList() {
 
   const fetchCars = async () => {
     try {
-      const res = await fetch("https://internshala-dzq7.onrender.com/api/showcars");
+      const res = await fetch("https://quadiro-five.vercel.app/api/showcars");
       if (!res.ok) {
         throw new Error("Network response was not ok");
       }
@@ -25,7 +25,7 @@ function CarList() {
 
   const handleDelete = async (id) => {
     try {
-      const res = await fetch(`https://internshala-dzq7.onrender.com/api/deletecar/${id}`, {
+      const res = await fetch(`https://quadiro-five.vercel.app/api/deletecar/${id}`, {
         method: "DELETE",
       });
       if (!res.ok) {
@@ -40,7 +40,7 @@ function CarList() {
   const handleUpdate = async (updatedCar) => {
     try {
       const res = await fetch(
-        `https://internshala-dzq7.onrender.com/api/updatecar/${updatedCar._id}`,
+        `https://quadiro-five.vercel.app/api/updatecar/${updatedCar._id}`,
         {
           method: "PUT",
           headers: {
