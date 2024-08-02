@@ -20,7 +20,7 @@ app.use(bodyParser.json());
 app.use(cors(
     {
         origin:['http://localhost:3000','https://quadiro-5e6u.onrender.com',
-            'https://quadiro-electric-shade-electricshades-projects.vercel.app/'],
+            'https://frontend-inky-three.vercel.app'],
         methods: ['GET','POST','PUT','UPDATE','DELETE']
     }
 ))
