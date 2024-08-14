@@ -1,0 +1,72 @@
+.counter-outer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .counter-progress {
+    width: 100%;
+    height: 10px;
+    background-color: #e0e0e0;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background-color: #76c7c0;
+    transition: width 0.3s ease;
+  }
+  
+  .counter-disp {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .counter-err {
+    color: red;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  
+  .counter-btn-grp {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .counter-btn button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #76c7c0;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  .counter-btn button:hover {
+    background-color: #5ea8a3;
+  }
+  
+  @media (min-width: 768px) {
+    .counter-btn-grp {
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .counter-btn button {
+      width: auto;
+    }
+  }
+  
