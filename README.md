@@ -1,9 +1,9 @@
 
 <h3> Internshala </h3>  
-Conversely(I): https://conversely-eight.vercel.app/    
-Quadiro(I): https://frontend-inky-three.vercel.app/    
-JaruratCare(I): https://counter-two-henna.vercel.app/    
+Conversely(I): https://conversely-eight.vercel.app/ <br>
+Quadiro(I): https://frontend-inky-three.vercel.app/  <br> 
+JaruratCare(I): https://counter-two-henna.vercel.app/  <br>
 
 <h3> Freelance </h3>  
-Fitness(F): https://fitness-eosin-omega.vercel.app/  
+Fitness(F): https://fitness-eosin-omega.vercel.app/  <br>
 
