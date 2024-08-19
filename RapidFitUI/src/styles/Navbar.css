@@ -1,0 +1,19 @@
+.navbar {
+  height: 100vh;
+}
+.navbar-links {
+  position: fixed;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+.navbar-links img {
+  width: 5vw;
+}
+a {
+  margin: 2vh 0vh;
+
+}
